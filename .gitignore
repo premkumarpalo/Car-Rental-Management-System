@@ -1,0 +1,69 @@
+# ==============================
+# Dependencies
+# ==============================
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# ==============================
+# Environment variables
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Logs
+# ==============================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================
+# Build / Production
+# ==============================
+build/
+dist/
+frontend/build/
+backend/dist/
+
+# ==============================
+# Cache
+# ==============================
+.cache/
+.vite/
+.next/
+
+# ==============================
+# OS files
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# IDE / Editor
+# ==============================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ==============================
+# Testing
+# ==============================
+coverage/
+
+# ==============================
+# Optional: uploads (if storing files locally)
+# ==============================
+uploads/
+public/uploads/
+
+# ==============================
+# Misc
+# ==============================
+*.local

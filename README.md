@@ -78,7 +78,47 @@ npm run dev
 
 ## 📸 Screenshots
 
-*Add screenshots here (Dashboard, Vehicles, Rentals, History)*
+### Active DashBoard
+![Active DashBoard](frontend/src/projectOverview/ActiveDashboard.png)
+
+### Dashboard
+![Dashboard](frontend/src/projectOverview/Dashboard.png)
+
+### Active Rental
+![Active Rental](frontend/src/projectOverview/ActiveRental.png)
+
+### Active Vehicles
+![Active Vehicles](frontend/src/projectOverview/ActiveVehicles.png)
+
+### Add Vehicle
+![Add Vehicle](frontend/src/projectOverview/AddVehicle.png)
+
+### Billing Page
+![Billing Page](frontend/src/projectOverview/BillingPage.png)
+
+### Booking
+![Booking](frontend/src/projectOverview/Booking.png)
+
+### History Page
+![History Page](frontend/src/projectOverview/HistoryPage.png)
+
+### Login Page
+![Login Page](frontend/src/projectOverview/LoginPage.png)
+
+### Register Page
+![Register Page](frontend/src/projectOverview/RegisterPage.png)
+
+### Remove Vehicle
+![Remove Vehicle](frontend/src/projectOverview/RemoveVehicle.png)
+
+### Rental Page
+![Rental Page](frontend/src/projectOverview/RentalPage.png)
+
+### Success Page
+![Success Page](frontend/src/projectOverview/SuccessPage.png)
+
+### Vehicle Page
+![Vehicle Page](frontend/src/projectOverview/VehiclePage.png)
 
 ---
 

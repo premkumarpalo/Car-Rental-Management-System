@@ -85,7 +85,7 @@ npm run dev
 ![Dashboard](frontend/src/projectOverview/Dashboard.png)
 
 ### Active Rental
-![Active Rental](frontend/src/projectOverview/ActiveRental.png)
+![Active Rental](frontend/src/projectOverview/ActiveRentalPage.png)
 
 ### Active Vehicles
 ![Active Vehicles](frontend/src/projectOverview/ActiveVehicles.png)

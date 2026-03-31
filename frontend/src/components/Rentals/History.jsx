@@ -126,7 +126,7 @@ export default function RentalHistory(){
             {visibleCount < rentals.length && (
                 <div className="flex justify-center mt-6">
                     <button onClick={() => setvisibleCount((prev) => prev + 5)}
-                        className="bg-blue-300 text-black font-['Inter'] font-bold text-center px-6 py-2 rounded-lg hover:bg-blue-600 transition mb-5"
+                        className="bg-blue-300 text-black font-['Inter'] font-bold text-center px-6 py-2 rounded-lg hover:bg-blue-600 hover:text-white cursor-pointer transition mb-5"
                     >
                         Load More
                     </button>

@@ -160,7 +160,7 @@ const updatePassword = asyncHandler(async(req,res)=>{
 const fetchProfile = asyncHandler(async(req,res)=>{
     const userExists = await owner.findById(req.user._id).select("ownerName shopName email")  // this select will used to send only ownername shopname and email as response not the whole data
     if(!userExists){
-        throw new ApiError(402,"User doesnt exists")
+        throw new ApiError(401,"User doesnt exists")
     }
 
     res.status(200).json(new ApiResponse(200,userExists,"user fetched successfully"))

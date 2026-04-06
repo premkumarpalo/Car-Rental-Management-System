@@ -24,10 +24,19 @@ export default function Dashboard(){
             setownerName(response.data.data.ownerName)
         } catch (error) {
             console.log("Error is : ",error)
+            if (error.response && error.response.status === 402) {
+                localStorage.removeItem("accessToken")
+                navigate("/login")
+            }
         }
     }
 
     const getDetails = async() => {
+        const token = localStorage.getItem("accessToken")
+        if(!token){
+            navigate("/login")
+            return;
+        }
         try {
             const [details, vehicleDetail, fetchAvailableVehicles] = await Promise.all([
                 axios.get("http://localhost:8000/api/v1/rental/totalActiveRentals", {
@@ -46,16 +55,29 @@ export default function Dashboard(){
             setavailableVehicles(fetchAvailableVehicles.data.data);
         } catch (error) {
             console.log("Error occurred in getDetails function : ", error)
+            if (error.response && error.response.status === 402) {
+                localStorage.removeItem("accessToken")
+                navigate("/login")
+            }
         }
     }
 
     const getVehicles = async() => {
+        const token = localStorage.getItem("accessToken")
+        if(!token){
+            navigate("/login")
+            return;
+        }
         try {
             const vehicleData = await axios.get("http://localhost:8000/api/v1/vehicle/list-Vehicles",{headers:{Authorization:`Bearer ${localStorage.getItem("accessToken")}`}})
             setVehicles(vehicleData.data.data)
             
         } catch (error) {
             console.log("Error in getVehicle func : ",error)
+            if (error.response && error.response.status === 402) {
+                localStorage.removeItem("accessToken")
+                navigate("/login")
+            }
         }
     }
 
